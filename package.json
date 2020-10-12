@@ -3,10 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "babel-plugin-styled-components": "^1.10.1",
     "moment": "2.22.1",
     "prop-types": "15.6.2",
-    "ramda": "^0.26.1",
     "react": "16.4.0",
     "react-dom": "16.4.0",
     "react-redux": "5.0.7",
@@ -16,8 +14,7 @@
     "redux": "4.0.0",
     "redux-devtools-extension": "^2.13.8",
     "redux-persist": "^5.10.0",
-    "redux-thunk": "2.2.0",
-    "styled-components": "^4.3.2"
+    "redux-thunk": "2.2.0"
   },
   "devDependencies": {
     "eslint-config-airbnb": "16.1.0",
@@ -36,7 +33,7 @@
   "scripts": {
     "config:precommit": "node node_modules/husky/bin/install.js",
     "flow": "./node_modules/.bin/flow",
-    "precommit": "yarn flow && lint-staged",
+    
     "start": "react-scripts start"
   }
 }
