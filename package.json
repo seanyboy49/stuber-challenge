@@ -1,0 +1,42 @@
+{
+  "name": "code-test",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.10.1",
+    "moment": "2.22.1",
+    "prop-types": "15.6.2",
+    "ramda": "^0.26.1",
+    "react": "16.4.0",
+    "react-dom": "16.4.0",
+    "react-redux": "5.0.7",
+    "react-router-dom": "4.2.2",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "1.1.4",
+    "redux": "4.0.0",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-persist": "^5.10.0",
+    "redux-thunk": "2.2.0",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "16.1.0",
+    "flow-bin": "0.73.0",
+    "husky": "0.14.3",
+    "lint-staged": "7.1.2",
+    "prettier": "1.12.1"
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "prettier --write",
+      "eslint",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "config:precommit": "node node_modules/husky/bin/install.js",
+    "flow": "./node_modules/.bin/flow",
+    "precommit": "yarn flow && lint-staged",
+    "start": "react-scripts start"
+  }
+}
